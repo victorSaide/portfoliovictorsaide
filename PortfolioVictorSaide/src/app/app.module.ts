@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoArgProgramaComponent } from './components/logo-arg-programa/logo-arg-programa.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogoArgProgramaComponent
+    LogoArgProgramaComponent,
+    SocialMediaComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
