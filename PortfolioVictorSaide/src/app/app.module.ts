@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoArgProgramaComponent } from './components/logo-arg-programa/logo-arg-programa.component';
-import { SocialMediaComponent } from './social-media/social-media.component';
-import { BannerComponent } from './banner/banner.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BannerComponent } from './banner/banner.component';
     HeaderComponent,
     LogoArgProgramaComponent,
     SocialMediaComponent,
-    BannerComponent
+    BannerComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
