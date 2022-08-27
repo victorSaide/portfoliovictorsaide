@@ -1,19 +1,15 @@
 .row{
-    padding: 20px;
+    padding: 10px;
 }
 
 div{
     background-color: #427898;
     text-align: center;
+    align-items:center;
     color: #ffff;
 }
 
 /*estilos del id profile_pic*/
-
-/*#profile_pic{
-    border-radius: 100%;
-    bottom: 10px;
-}*/
 
 @media (min-width: 576px){
     #profile_pic{
@@ -22,7 +18,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px #427898;
         left: 1%;
-        bottom: 20px;
+        top:400px;
     }
 }
 
@@ -33,7 +29,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px #427898;
         left: 33%;
-        bottom: 0.5px;
+        top:500px;
     }
 }
 
