@@ -1,16 +1,20 @@
 /** contiene todos los logos del nav **/
+.row{
+    width: 100%;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
+    /**position: fixed; no linkea si esta en posición inicial, ver**/
+    background-color: #427898;
+    box-shadow: -2px 4px 10px 0px rgb(112 88 50 / 75%);
 }
 
 #argProgLogo{
     width: 150px;
-}
-
-.social-media img{
-    
 }
 
 img{
@@ -25,6 +29,10 @@ img{
 
 .btn{
     border-width: medium;
+}
+
+.social-media{
+    
 }
 
 /** Vista desde móviles **/
