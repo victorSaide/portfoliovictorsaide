@@ -17,7 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
-    @Autowired IPersonaService ipersonaService;
+    
+    @Autowired
+    IPersonaService ipersonaService;
     
     // trae datos del backend al frontend
     @GetMapping ("personas/traer")

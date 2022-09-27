@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logo-arg-programa',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoArgProgramaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  // función para redirigir el botón login sin cambiar el diseño anterior por un a href
+  login(){
+    this.router.navigate(['/login'])
   }
 
 }

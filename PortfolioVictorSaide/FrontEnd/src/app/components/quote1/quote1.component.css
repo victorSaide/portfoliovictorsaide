@@ -1,0 +1,12 @@
+.row{
+    background-color: #427898;
+    margin: 10 0 0 10 vh;
+    padding: 10vh;
+    color: aliceblue;
+    box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.3);
+}
+
+h5{
+    text-align: right;
+}
+  

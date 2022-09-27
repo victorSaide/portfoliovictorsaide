@@ -1,9 +1,21 @@
-.row{
+.experience{
+    text-align: center;
     padding: 20px;
-    background-color: #427898;
-    color: #ffff;
 }
 
-h1,h3{
-    display: inline;
+.row{
+    padding: 20px;
+    text-align: center;
+    justify-content: space-around;
 }
+
+.card{
+    text-align: center;
+    margin: 1vh;
+}
+
+.job {
+    border-bottom: 1px solid grey;
+    height: 12vh;
+}
+

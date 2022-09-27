@@ -1,5 +1,7 @@
 .row{
     padding: 10px;
+    box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.3);
+    flex-direction: row;
 }
 
 div{
@@ -11,26 +13,32 @@ div{
 
 /*estilos del id profile_pic*/
 
-@media (min-width: 576px){
+@media (min-width: 650px){
     #profile_pic{
         border-radius: 100%;
         box-shadow: 3px 3px 3px #427898;
         left: 1%;
         top:200px;
+        margin-top: -6rem;
+        width: 50%;
+        border: aliceblue solid 2px;
     }
 }
 
-@media (max-width: 575px){
+@media (max-width: 649px){
     #profile_pic{
         border-radius: 100%;
         box-shadow: 3px 3px 3px #427898;
         left: 33%;
         top:200px;
+        margin-top: -7rem;
+        width: 60%;
+        border: aliceblue solid 4px;
     }
 }
 
-#name{
+#nombre{
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 5%;
     text-transform: uppercase;
 }
