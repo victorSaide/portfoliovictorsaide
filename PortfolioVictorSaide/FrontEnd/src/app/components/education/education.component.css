@@ -1,4 +1,4 @@
-.experience{
+.education{
     text-align: center;
     padding: 20px;
 }
@@ -12,6 +12,10 @@
 .card{
     text-align: center;
     margin: 1vh;
+}
+
+.card:hover{
+    background-color:aliceblue;
 }
 
 .job {

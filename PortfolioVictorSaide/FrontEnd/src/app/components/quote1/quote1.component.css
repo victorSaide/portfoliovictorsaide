@@ -4,9 +4,11 @@
     padding: 10vh;
     color: aliceblue;
     box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    text-align: center;
 }
 
 h5{
-    text-align: right;
+    text-align: center;
 }
-  

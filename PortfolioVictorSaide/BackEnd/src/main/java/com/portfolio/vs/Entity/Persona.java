@@ -9,9 +9,8 @@ import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter @Setter
-// con esta línea anterior evito escribir los getters & setters
-
+@Getter 
+@Setter
 @Entity
 public class Persona {
     @Id

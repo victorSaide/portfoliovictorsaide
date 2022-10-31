@@ -7,8 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LogoArgProgramaComponent } from './components/logo-arg-programa/logo-arg-programa.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { EducationComponent } from './components/education/education.component';
+import { ExperienciaComponent } from './components/experience/experience.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -17,6 +16,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { Quote1Component } from './components/quote1/quote1.component'
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experience/edit-experiencia.component';
+import { NeweducacionComponent } from './components/education/neweducacion.component';
+import { EditeducacionComponent } from './components/education/editeducacion.component';
+import { EducacionComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -25,21 +31,28 @@ import { Quote1Component } from './components/quote1/quote1.component'
     LogoArgProgramaComponent,
     BannerComponent,
     AboutMeComponent,
-    ExperienceComponent,
-    EducationComponent,
+    ExperienciaComponent,
+    EducacionComponent,
     HardSoftSkillsComponent,
     ProjectsComponent,
     FooterComponent,
     HomeComponent,
     LoginComponent,
-    Quote1Component
+    Quote1Component,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

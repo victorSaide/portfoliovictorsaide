@@ -14,6 +14,10 @@
     margin: 1vh;
 }
 
+.card:hover{
+    background-color:aliceblue;
+}
+
 .job {
     border-bottom: 1px solid grey;
     height: 10vh;

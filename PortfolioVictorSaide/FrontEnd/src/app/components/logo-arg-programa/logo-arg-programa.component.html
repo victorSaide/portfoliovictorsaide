@@ -11,10 +11,10 @@
         <!--navbar navbar-expand-lg navbar-dark bg-dark -->
         <nav class="navbar navbar-light" style="background-color: #427898;">
             <ul>
-                <li><a href="#">Acerca de mí</a></li>
-                <li><a href="#">Educación</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Proyectos</a></li>
+                <li><a href="#about-me">Acerca de mí</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>                               
             </ul>
         </nav>
@@ -22,12 +22,12 @@
 
         
         <div class="social-media">
-            <a href=""><img src="../../assets/linkedin.png" id="linkedin"></a>
-            <a href=""><img src="../../assets/twitter.png" id="twitter"></a>
-            <a href=""><img src="../../assets/instagram.png" id="instagram"></a>
-            <a href=""><img src="../../assets/github.png" id="github"></a>
-            <a href=""><img src="../../assets/facebook.png" id="facebook"></a>
-            <button type="button" class="btn btn-outline-light" (click)="login()">Ingresar</button>
+            <a href="https://www.linkedin.com/in/vsaide/"><img src="../../assets/linkedin.png" id="linkedin"></a>
+            <a href="https://twitter.com/ViiktorSD"><img src="../../assets/twitter.png" id="twitter"></a>
+            <a href="https://www.instagram.com/victor.saide/"><img src="../../assets/instagram.png" id="instagram"></a>
+            <a href="https://github.com/victorSaide"><img src="../../assets/github.png" id="github"></a>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogout()" *ngIf="isLogged">Salir</button>
         </div>
 
     </div>

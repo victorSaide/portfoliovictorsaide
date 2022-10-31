@@ -28,19 +28,22 @@ public class PersonaController {
     }
     
     // envia datos al backend desde el frontend
+    //tira error 403 con esta notation @PreAuthorize("hasRole('ADMIN')")
     @PostMapping ("/personas/crear")
     public String createPersona(@RequestBody Persona persona){
         ipersonaService.savePersona (persona);
         return "La persona fue creada correctamente.";
     }
     
-    @DeleteMapping ("/personas/borrar/(id)")
+    //tira error 403 con esta notation@PreAuthorize("hasRole('ADMIN')")
+    @DeleteMapping ("/personas/borrar/{id}")
     public String deletePersona (@PathVariable Long id){
         ipersonaService.deletePersona(id);
         return "La persona fue eliminada correctamente.";
     }
     
-    @PutMapping ("/personas/editar/(id)")
+    //tira error 403 con esta notation@PreAuthorize("hasRole('ADMIN')")
+    @PutMapping ("/personas/editar/{id}")
     public Persona editPersona (@PathVariable Long id,
                                 @RequestParam ("nombre") String nuevoNombre,
                                 @RequestParam ("apellido") String nuevoApellido,
